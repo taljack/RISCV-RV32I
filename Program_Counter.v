@@ -7,9 +7,9 @@ module Program_Counter(
 
     always @(posedge clk or posedge reset) begin
         if (reset) begin
-            pc <= 32'b0; // Reset the program counter to 0
+            pc <= 32'b0; 
         end else begin
-            pc <= next_pc; // Update the program counter with the next value
+            pc <= next_pc; 
         end
     end
 endmodule
